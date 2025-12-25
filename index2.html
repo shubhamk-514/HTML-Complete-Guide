@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice</title>
+
+    <style>
+        table {
+            text-align: center;
+            border: 1px solid blue;
+            border-collapse: collapse;
+        }
+
+        tr,
+        td,
+        th {
+            border: 2px solid #834;
+        }
+
+        video {
+            border-width: 20px;
+        }
+
+        #shubham {
+            text-align: center;
+        }
+
+        ul.nav {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p>
+        Siddhikant is very amazing so funny 😂😂😂😂😂
+        (<b style="color: aqua;">person</b>). He is very good person
+    </p>
+
+    <h1>Link</h1>
+    <a href="https://www.google.com/search?q=chrome" target="_blank">Google</a>
+
+    <hr>
+
+    <h1>Clickable Image</h1>
+    <a href="https://in.search.yahoo.com/search?p=mercedes-benz" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuS3RwWGj4l-W20k1feMhyoJegxrfca7o5VA&s"
+            alt="car" width="250">
+    </a>
+
+    <hr>
+
+    <h1>Lists</h1>
+    <ul style="list-style-type: square;">
+        <li>Bullet</li>
+        <li>Scorpio</li>
+        <li>Fortuner</li>
+    </ul>
+
+    <ol style="list-style-type: lower-roman;">
+        <li>Bugatti</li>
+        <li>Vision 6</li>
+        <li>Rolls Royce</li>
+    </ol>
+
+    <hr>
+
+    <ul class="nav">
+        <li><a href="#" target="_blank">Home</a></li>
+        <li><a href="#" target="_blank">About</a></li>
+        <li><a href="#" target="_blank">Service</a></li>
+        <li><a href="#" target="_blank">Review</a></li>
+    </ul>
+
+    <hr>
+
+    <h2>HTML Table</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Class</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Shubham</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Siddhi</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Sharma</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Sachin</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td colspan="2">Group of my friends</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h1>College Time Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7">Time Table</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="6">Hours</td>
+                <td>Mon</td>
+                <td>Tue</td>
+                <td>Wed</td>
+                <td>Thu</td>
+                <td>Fri</td>
+                <td>Sat</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+            </tr>
+            <tr>
+                <td colspan="6" id="shubham">Lunch</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td rowspan="2">Games</td>
+            </tr>
+            <tr>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+                <td>Math</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h1>Audio</h1>
+    <audio controls>
+        <source src="https://cdn.pixabay.com/download/audio/2021/11/01/audio_00fa5593f3.mp3" type="audio/mpeg">
+    </audio>
+
+    <hr>
+
+    <h1>Video</h1>
+    <video width="320" height="240" controls>
+        <source src="movie.mp4" type="video/mp4">
+    </video>
+
+    <hr>
+
+    <h1>HTML Form</h1>
+
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+
+            <div>
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter your name">
+            </div>
+
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+
+            <div>
+                <label for="password">Password</label>
+                <input type="password" id="password">
+            </div>
+
+            <div>
+                <label>Gender</label>
+                <input type="radio" name="gender" value="male"> Male
+                <input type="radio" name="gender" value="female"> Female
+            </div>
+
+            <div>
+                <label>Hobbies</label>
+                <input type="checkbox" name="hobby" value="music"> Music
+                <input type="checkbox" name="hobby" value="sport"> Sport
+            </div>
+
+            <div>
+                <label for="country">Country</label>
+                <select id="country">
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>China</option>
+                    <option>England</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="birthday">Birthday</label>
+                <input type="date" id="birthday">
+            </div>
+
+            <div>
+                <label for="color">Favorite Color</label>
+                <input type="color" id="color">
+            </div>
+
+            <div>
+                <input type="submit" value="Submit">
+            </div>
+
+        </fieldset>
+    </form>
+
+    <h3>HTML Semantic Elements</h3>
+
+</body>
+
+</html>
